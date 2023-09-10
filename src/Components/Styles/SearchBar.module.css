@@ -1,0 +1,71 @@
+:root {
+  --bg: #fff;
+  --btn_bg: #6478e6;
+  --secondary: #f0f0f0;
+}
+
+.SearchBox {
+  box-sizing: border-box;
+  max-width: 580px;
+
+  height: 3rem;
+  width: 100%;
+  background-color:#fff;
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+}
+
+.SearchBox > svg {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.2rem;
+  left: 1rem;
+}
+
+.SearchBox input {
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: var(--secondary);
+  margin-right: 0.5rem;
+  padding-left: 2rem;
+}
+
+.SearchBox button {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--btn_bg);
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.active input{
+  border: 1px #f24547 solid;
+}
+
+.SearchBox .errorMsg {
+  position: absolute;
+  top: 7vh;
+  color: #f24547;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+
+.SearchBox .errorMsg p {
+  margin: 0;
+  margin-left: 0.5rem;
+}
